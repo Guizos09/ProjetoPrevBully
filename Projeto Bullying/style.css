@@ -91,7 +91,8 @@ main {
 
 /* Image section */
 .image-section {
-    width: 45%;
+    margin-left: auto;
+    max-width: 45%;
 }
 
 .image-section img {
