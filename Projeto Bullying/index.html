@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do Site</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Trabalho sobre Bullying</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>           
+
+    <!-- Header -->
+    <header>
+        <div class="menu">
+            <button class="menu-button">MENU</button>
+        </div>
+        <div class="title">
+            <h1>2B</h1>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <div class="content-wrapper">
+            <section class="text-section">
+                <h2>Olá, esse é nosso trabalho sobre o bullying</h2>
+                <p>Nele vamos tratar sobre esses itens, fique à vontade para ir até cada um deles, porém, sugerimos que siga a ordem!!</p>
+                <div class="sumario">
+                    <h3>Sumário</h3>
+                    <ol>
+                        <li>O que é Bullying</li>
+                        <li>Bullying nas Escolas</li>
+                        <li>Consequências do Bullying</li>
+                        <li>Tipos de Bullying</li>
+                        <li>Por que Ocorre o Bullying</li>
+                        <li>Quais Idades?</li>
+                        <li>Prevenção</li>
+                        <li>Como Lidar</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Image Section -->
+            <section class="image-section">
+                <img src="imagens/bullyingMainPage.jpg" alt="Imagem sobre bullying">
+            </section>
+        </div>
     </main>
+
+    <!-- Footer with navigation buttons -->
     <footer>
-        <p>Produto feito pelos alunos do 2ºB da escola Estadual Santo 
-            Agostinho
-        </p>
+        <div class="navigation">
+            <button onclick="previousPage()"><<<</button>
+            <p>Trabalho dos Alunos do 2B</p>
+            <button onclick="nextPage()">>>></button>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
