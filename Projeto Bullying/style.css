@@ -101,22 +101,30 @@ main {
 
 /* Footer and navigation */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 100%;
     max-width: 400px;
 }
 
-.navigation button {
+.nav-left {
+    margin-left: 0;
+}
+
+.nav-right {
+    margin-right: 0;
+}
+
+.nav-button {
     background-color: white;
     color: black;
     border: 2px solid white;
@@ -124,15 +132,16 @@ footer {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    margin: 0;
 }
 
-.navigation button:hover {
+.nav-button:hover {
     background-color: red;
     color: white;
 }
 
-.navigation p {
+.nav-center {
+    text-align: center;
     color: white;
     font-size: 18px;
-    text-align: center;
 }
