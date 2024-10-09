@@ -8,7 +8,7 @@
 /* Estilos gerais do body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, #100f6f 0%, #010108 100%); /* Degradê de azul mais claro para azul escuro */
+    background: linear-gradient(to top, #100f6f 0%, #010108 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -20,8 +20,12 @@ header {
     background-color: black;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza o título */
     align-items: center;
+}
+
+.menu {
+    margin-left: auto; /* Faz o menu ficar à direita */
 }
 
 .menu-button {
@@ -34,8 +38,8 @@ header {
 }
 
 .title {
-    flex-grow: 1;
     text-align: center;
+    flex-grow: 1; /* Permite que o título use o espaço disponível */
 }
 
 .title h1 {
@@ -55,7 +59,7 @@ main {
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Ajuste aqui para centralizar verticalmente */
     width: 100%;
     max-width: 1200px;
 }
@@ -91,7 +95,6 @@ main {
 
 /* Image section */
 .image-section {
-    margin-left: auto;
     max-width: 45%;
 }
 
@@ -100,29 +103,28 @@ main {
     border-radius: 10px;
 }
 
-/* Footer and navigation */
+/* Footer e navegação */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Mantenha o espaço entre os elementos */
     align-items: center;
     background-color: black;
     padding: 10px;
 }
 
-.navigation {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
+.nav-left {
+    margin-right: auto; /* Faz o botão de retroceder ficar à esquerda */
 }
 
-.nav-left {
-    margin-left: 0;
+.nav-center {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    flex-grow: 1; /* Permite que o texto centralizado use o espaço disponível */
 }
 
 .nav-right {
-    margin-right: 0;
+    margin-left: auto; /* Faz o botão de avançar ficar à direita */
 }
 
 .nav-button {
@@ -136,13 +138,9 @@ footer {
     margin: 0;
 }
 
+
 .nav-button:hover {
     background-color: red;
     color: white;
 }
 
-.nav-center {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-}
