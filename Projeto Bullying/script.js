@@ -2,7 +2,17 @@
 const pages = [
     'index.html',                   // Página inicial
     'o_que_e_bullying.html',        // O que é Bullying
-    'bullying_nas_escolas.html'     // Bullying nas Escolas
+    'bullying_nas_escolas.html',     // Bullying nas Escolas
+    'consequencias_do_bullying.html',
+    'tipos_de_bullying1.html',
+    'porque_bullying1.html',
+    'porque_bullying2.html',
+    'idades1.html',
+    'idades2.html',
+    'prevencao.html',
+    'funcao_psi1.html',
+    'funcao_psi2.html',
+    'fim.html'
 ];
 
 let currentPage = 0; // Índice da página atual
